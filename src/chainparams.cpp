@@ -123,7 +123,7 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0xbd3be3716492dce0cdebf1b5d9d6e41a0d397f0fed7f8ceaf190936bb34cccab"));
         assert(genesis.hashMerkleRoot == uint256S("0x558b83412b6d2a258fc0a3bbae504ff33ac2dd301de6466a72a8f412866d6faf"));
 
-        // clear seed nodes for a new mainnet 
+        // clear seed nodes for a new mainnet
         vFixedSeeds.clear();
         vSeeds.clear();
         // Note that of those with the service bits flag, most only support a subset of possible options
@@ -165,6 +165,8 @@ public:
                 // {456000, uint256S("0xbf34f71cc6366cd487930d06be22f897e34ca6a40501ac7d401be32456372004")},
                 // {638902, uint256S("0x15238656e8ec63d28de29a8c75fcf3a5819afc953dcd9cc45cecc53baec74f38")},
                 // {721000, uint256S("0x198a7b4de1df9478e2463bd99d75b714eab235a2e63e741641dc8a759a9840e5")},
+                // 0xbd3be3716492dce0cdebf1b5d9d6e41a0d397f0fed7f8ceaf190936bb34cccab   //test
+                // 0x841a2965955dd288cfa707a755d05a54e45f8bd476835ec9af4402a2b59a2967   //test
             }
         };
 
@@ -254,7 +256,11 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
+                {0, uint256S("a31d20a464e3e9d9c30dc317102f65eb9a7fb3ee2cef7fa82c31e28177be67d5")}, // without 0x
                 // {2056, uint256S("17748a31ba97afdc9a4f86837a39d287e3e7c7290a08a1d816c5969c78a83289")},
+                // a31d20a464e3e9d9c30dc317102f65eb9a7fb3ee2cef7fa82c31e28177be67d5 //test
+                // 17748a31ba97afdc9a4f86837a39d287e3e7c7290a08a1d816c5969c78a83289 //test
+
             }
         };
 
@@ -327,6 +333,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
+                {0, uint256S("5ab6ec519bdac96582877d1d399a37fe676e610c23482268806d03f0a5a95d47")},
                 // {0, uint256S("530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9")},
             }
         };
