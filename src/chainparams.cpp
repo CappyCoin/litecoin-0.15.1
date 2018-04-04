@@ -123,6 +123,9 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0xbd3be3716492dce0cdebf1b5d9d6e41a0d397f0fed7f8ceaf190936bb34cccab"));
         assert(genesis.hashMerkleRoot == uint256S("0x558b83412b6d2a258fc0a3bbae504ff33ac2dd301de6466a72a8f412866d6faf"));
 
+        // clear seed nodes for a new mainnet 
+        vFixedSeeds.clear();
+        vSeeds.clear();
         // Note that of those with the service bits flag, most only support a subset of possible options
         // vSeeds.emplace_back("seed-a.litecoin.loshan.co.uk", true);
         // vSeeds.emplace_back("dnsseed.thrasher.io", true);
