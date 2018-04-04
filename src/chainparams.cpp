@@ -129,7 +129,7 @@ public:
         // vSeeds.emplace_back("dnsseed.litecointools.com", true);
         // vSeeds.emplace_back("dnsseed.litecoinpool.org", true);
         // vSeeds.emplace_back("dnsseed.koin-project.com", false);
-        vSeeds.emplace_back("45.77.44.162", true); //miku 
+        vSeeds.emplace_back("45.77.44.162:9333", true); //miku test
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
