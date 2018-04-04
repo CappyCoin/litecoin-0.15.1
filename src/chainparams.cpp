@@ -115,7 +115,7 @@ public:
         pchMessageStart[1] = 0xc0;
         pchMessageStart[2] = 0xb6;
         pchMessageStart[3] = 0xdb;
-        nDefaultPort = 9333;
+        nDefaultPort = 9139;
         nPruneAfterHeight = 100000;
 
         genesis = CreateGenesisBlock(1514764800, 3033548, 0x1e0ffff0, 1, 50 * COIN);
@@ -129,7 +129,7 @@ public:
         // vSeeds.emplace_back("dnsseed.litecointools.com", true);
         // vSeeds.emplace_back("dnsseed.litecoinpool.org", true);
         // vSeeds.emplace_back("dnsseed.koin-project.com", false);
-        vSeeds.emplace_back("45.77.44.162:9333", true); //miku test
+        vSeeds.emplace_back("45.77.44.162:9139", true); //miku test
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
