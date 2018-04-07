@@ -180,9 +180,9 @@ public:
             // 19831879,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
             // 0.06     // * estimated number of transactions per second after that timestamp
+            1514764800,   // 유닉스타임 메인넷
             0,
-            0,
-            0
+            0.06          // 일단 라코와 같음
         };
     }
 };
